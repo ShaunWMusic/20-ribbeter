@@ -21,3 +21,6 @@ Route.on('/').render('layout');
 
 Route.get('/register', 'UserController.create');
 Route.post('/register', 'UserController.store');
+
+Route.get('/login', 'loginController.create');
+Route.post('/login', 'LoginController.store');
