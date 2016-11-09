@@ -53,6 +53,33 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 }
 
-.form-group {
-  background: blue;
+.form {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    background: rgba(147, 202, 98, 1.0);
+    color: $c-pure-white;
+    margin: -1rem;
+  }
+}
+
+form {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+  flex-basis: calc(50% - 2rem);
+  padding: $m-gutter;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-register {
+  color: rgba(74, 181, 194, 1.0);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
