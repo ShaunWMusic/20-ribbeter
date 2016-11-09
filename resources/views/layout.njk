@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/dist/app.css">
   </head>
   <body>
-    <section class="section">
-    <div class="container">
       <div class="top-nav">
       <h1>Ribbeter</h1>
       <ul>
@@ -17,7 +15,10 @@
         <li><a href="#">Login</a></li>
       </ul>
       </div>
-    </div>
+    <section class="section">
+      {% block content %}
+
+      {% endblock %}
     </section>
   </body>
 </html>

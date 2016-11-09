@@ -1,11 +1,11 @@
 'use strict';
 
-class RegisterController {
+class UserController {
   * index(request, response) {
   }
 
   * create(request, response) {
-
+    yield response.sendView('user.create');
   }
 
   * store(request, response) {
@@ -29,4 +29,4 @@ class RegisterController {
   }
 }
 
-module.exports = RegisterController;
+module.exports = UserController;
