@@ -20,7 +20,7 @@ class LoginController {
 
       yield request.with({ success: 'You have logged in!' }).flash();
 
-      response.redirect('/login');
+      response.redirect('/users');
     } catch (e) {
       // send back the old inputs but not the password
       yield request.withOut('password')
