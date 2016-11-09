@@ -26,7 +26,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 .section {
   background: rgba(147, 202, 98, 1.0);
-  padding: 0 $m-gutter;
+  padding: $m-gutter;
 }
 
 .container {
@@ -38,7 +38,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   justify-content: space-between;
   color: $c-pure-white;
-  padding: $m-gutter;
+  // padding: $m-gutter;
 
     ul {
       display: flex;
@@ -46,6 +46,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
       li {
         padding-left: 0.5rem;
+        margin-top: 0.5rem;
         font-size: 1rem;
       }
     }
