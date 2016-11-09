@@ -18,24 +18,15 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 
-@import 'adonis';
+@import 'reset';
 
-ul {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-a {
-  text-decoration: none;
-  color: $c-pure-white;
-}
+
 
 
 .section {
   background: rgba(147, 202, 98, 1.0);
-  padding: $m-gutter;
+  padding: 0 $m-gutter;
 }
 
 .container {
@@ -48,4 +39,15 @@ a {
   justify-content: space-between;
   color: $c-pure-white;
   padding: $m-gutter;
+
+    ul {
+      display: flex;
+      margin: 0 0.5rem;
+
+      li {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
 }
