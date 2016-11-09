@@ -12,21 +12,5 @@ class UserController {
 
   }
 
-  * show(request, response) {
-  //
-  }
-
-  * edit(request, response) {
-  //
-  }
-
-  * update(request, response) {
-  //
-  }
-
-  * destroy(request, response) {
-  //
-  }
-}
 
 module.exports = UserController;

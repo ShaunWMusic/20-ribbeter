@@ -5,7 +5,7 @@
 {{ form.open({action: 'UserController.store'}) }}
 
   {{ csrfField }}
-  <h2>Login</h2>
+  <h2>Create an Account</h2>
   <div class="form-group">
     {{ form.label('username', 'Username') }}
     {{ form.text('username', null, { class: 'form-control', placeholder: 'Username' }) }}
@@ -21,12 +21,12 @@
     {{ form.password('password', null, { class: 'form-control', placeholder: 'Password' }) }}
   </div>
 <div class="buttons">
-    <div class="button button-register">
-      {{ form.submit('Register', null, { class: 'btn btn-primary' }) }}
+    <div class="button">
+      {{ form.submit('Login', null, { class: 'btn btn-primary button1' }) }}
     </div>
 
     <div class="button">
-      {{ form.submit('Login', null, { class: 'btn btn-primary' }) }}
+      {{ form.submit('Sign Up', null, { class: 'btn btn-primary button2' }) }}
     </div>
 </div>
 

@@ -56,30 +56,62 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .form {
   display: flex;
   justify-content: center;
+  padding-left: 0.5rem;
 
   h2 {
     background: rgba(147, 202, 98, 1.0);
     color: $c-pure-white;
-    margin: -1rem;
+    margin-top: 0;
+    padding-left: 0.5rem;
+
+
   }
 }
 
 form {
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
   flex-basis: calc(50% - 2rem);
-  padding: $m-gutter;
+  border-radius: 0.4rem;
+
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem;
 }
 
-.button-register {
-  color: rgba(74, 181, 194, 1.0);
+.button1 {
+  outline: none;
+  background: $c-pure-white;
+  color: rgba(74, 181, 189, 1.0);
+  padding: 0.4rem;
+  border: 0;
 }
+
+.button2 {
+  outline: none;
+  background: rgba(147, 202, 98, 1.0);
+  color: $c-pure-white;
+  padding: 0.4rem;
+  border: 0;
+}
+
 
 label {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-bottom: 0.2rem solid rgba(74, 181, 189, 1.0);
+}
+
+.form-group {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
