@@ -20,9 +20,24 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 @import 'reset';
 
+.grid {
+  display: flex;
+  margin: $m-gutter;
 
+  &--center {
+    justify-content: center;
+  }
 
+  &__item {
+    flex-basis: calc(100% / 3 - #{$m-gutter} - #{$m-gutter});
+    flex-grow: 1;
+    margin: $m-gutter;
 
+    &--half {
+      max-width: 50%;
+    }
+  }
+}
 
 .section {
   padding: $m-gutter;
@@ -53,20 +68,20 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  padding-left: 0.5rem;
+// . {
+//   display: flex;
+//   justify-content: center;
+//   max-width: 23rem;
+//   margin: 0 auto;
+//   padding-left: 0.5rem;
+// }
 
-  h2 {
+  .title-account {
     background: rgba(147, 202, 98, 1.0);
     color: $c-pure-white;
     margin-top: 0;
     padding-left: 0.5rem;
-
-
   }
-}
 
 form {
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -81,22 +96,21 @@ form {
   padding: 0.5rem;
 }
 
-.button1 {
+.btn {
+  display: block;
   outline: none;
-  background: $c-pure-white;
+  background: $c-white;
   color: rgba(74, 181, 189, 1.0);
   padding: 0.4rem;
   border: 0;
-}
+  font: inherit;
+  text-align: center;
 
-.button2 {
-  outline: none;
-  background: rgba(147, 202, 98, 1.0);
-  color: $c-pure-white;
-  padding: 0.4rem;
-  border: 0;
+  &--primary {
+    background: rgba(147, 202, 98, 1.0);
+    color: $c-white;
+  }
 }
-
 
 label {
   display: flex;
@@ -114,4 +128,8 @@ label {
 .form-group {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.header-users {
+  border-bottom: 0.1rem solid rgba(146, 207, 198, 1.0);
 }
