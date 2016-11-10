@@ -4,7 +4,7 @@ $c-secondary: #4bb5c1;
 $c-secondary-light: #7FC6BC;
 $c-white: #edf7f2;
 $c-pure-white: #fff;
-
+$c-danger: #de6363;
 $m-gutter: 1rem;
 $m-max-width: 60rem;
 
@@ -22,7 +22,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 .grid {
   display: flex;
-  margin: $m-gutter;
+  margin: -1rem;
 
   &--center {
     justify-content: center;
@@ -33,8 +33,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     flex-basis: calc(100% / 3 - #{$m-gutter} - #{$m-gutter});
     flex-grow: 1;
     margin: $m-gutter;
-    padding-right: 6rem;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+    &--content {
+      display: block;
+      padding-right: 7rem;
+
+    }
 
     img {
       padding: 0.5rem;
@@ -69,10 +74,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       display: flex;
       margin: 0 0.5rem;
 
-      li {
+      li a {
         padding-left: 0.5rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         font-size: 1rem;
+        color: $c-white;
       }
     }
 
@@ -88,10 +94,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
 form {
-  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
-  flex-basis: calc(50% - 2rem);
-  border-radius: 0.4rem;
-
+  flex-basis: 100%;
 }
 
 .buttons {
@@ -136,4 +139,16 @@ label {
 
 .header-users {
   border-bottom: 0.1rem solid rgba(146, 207, 198, 1.0);
+}
+
+
+.alert {
+display: flex;
+justify-content: center;
+  &--error {
+    color: $c-danger;
+    width: 29%;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
 }

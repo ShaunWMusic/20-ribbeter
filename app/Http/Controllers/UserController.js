@@ -7,6 +7,7 @@ const Hash = use('Hash');
 class UserController {
   * index(request, response) {
     const users = yield User.all();
+
     yield response.sendView('user.index', {
       users: users.toJSON(),
     });

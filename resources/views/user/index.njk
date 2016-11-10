@@ -4,21 +4,15 @@
 
   <h3 class="header-users">Users</h2>
     <div class="grid">
-      <div class="grid__item">
-        <img src="http://www.placecera.com/100/100" alt="">
-        <p>Michael Cera</p>
-        <p>$cera</p>
-      </div>
-      <div class="grid__item">
-        <img src="http://www.placecera.com/100/100" alt="">
-        <p>Michael Cera</p>
-        <p>$cera</p>
-      </div>
-      <div class="grid__item">
-        <img src="http://www.placecera.com/100/100" alt="">
-        <p>Michael Cera</p>
-        <p>$cera</p>
-      </div>
+      {% for user in users %}
+        <div class="grid__item">
+          <img src="http://www.placecera.com/100/100" alt="">
+          <div class="grid__item--content">
+            <p>{{ user.username }}</p>
+            <p>{{ user.email }}</p>
+          </div>
+        </div>
+      {% endfor %}
     </div>
 
 

@@ -17,6 +17,11 @@
       </div>
     <section class="section">
     <div class="container">
+      {% if old('error') %}
+        <div class="alert alert--error">
+          {{ old('error') }}
+        </div>
+      {% endif %}
 
          {% block content %}
 
