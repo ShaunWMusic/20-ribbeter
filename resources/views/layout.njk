@@ -8,11 +8,17 @@
   </head>
   <body>
       <div class="top-nav">
-      <h1>Ribbeter</h1>
+      <h1><a href="/">Ribbeter</a></h1>
       <ul>
-        <li><a href="/">Ribbets</a></li>
-        <li><a href="/users">Frogs</a></li>
-        <li><a href="login">Login</a></li>
+        {% if currentUser %}
+          <li><a href="/app">Ribbets</a></li>
+          <li><a href="/users">Frogs</a></li>
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Login</a></li>
+        {% endif %}
+
       </ul>
       </div>
     <section class="section">

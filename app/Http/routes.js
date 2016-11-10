@@ -25,4 +25,8 @@ Route.post('/register', 'UserController.store');
 Route.get('/login', 'loginController.create');
 Route.post('/login', 'LoginController.store');
 
-Route.get('/users', 'UserController.index');
+Route.get('/users', 'UserController.index').middleware('auth');
+
+Route.any('/logout', 'LoginController.destroy');
+
+Route.any('*').render('vue').middleware('auth');
