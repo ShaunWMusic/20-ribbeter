@@ -29,9 +29,19 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
   &__item {
+    display: flex;
     flex-basis: calc(100% / 3 - #{$m-gutter} - #{$m-gutter});
     flex-grow: 1;
     margin: $m-gutter;
+    padding-right: 6rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+    img {
+      padding: 0.5rem;
+      height: 6rem;
+      width: 100%;
+      object-fit: cover;
+    }
 
     &--half {
       max-width: 50%;
@@ -68,13 +78,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 }
 
-// . {
-//   display: flex;
-//   justify-content: center;
-//   max-width: 23rem;
-//   margin: 0 auto;
-//   padding-left: 0.5rem;
-// }
+
 
   .title-account {
     background: rgba(147, 202, 98, 1.0);
