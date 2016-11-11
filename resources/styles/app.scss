@@ -29,7 +29,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     justify-content: center;
   }
 
-
   &__item {
     display: flex;
     flex-basis: calc(100% / 3 - #{$m-gutter} - #{$m-gutter});
@@ -56,6 +55,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     }
   }
 }
+
+.logo {
+    color: $c-white;
+  }
+
 
 .section {
   padding: $m-gutter;
