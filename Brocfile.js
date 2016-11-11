@@ -11,7 +11,7 @@ const vueify = require('vueify');
 
 const stylePaths = [
   'resources/styles',
-  'node_modules',
+  'node_modules/font-awesome',
 ];
 
 // Edit this function to add browserify transforms,
@@ -28,7 +28,7 @@ const babelScript = new Babel(appNoSass);
 const appScript = browserify(babelScript, {
   browserify: {
     entries: ['./index'],
-    debug: true
+    debug: true,
   },
   cache: false,
   outputFile: 'app.js',

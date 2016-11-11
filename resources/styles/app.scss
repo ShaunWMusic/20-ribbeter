@@ -10,12 +10,8 @@ $m-max-width: 60rem;
 
 $font: 'Dosis', sans-serif;
 
-
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
-
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome/scss/font-awesome';
+@import 'scss/font-awesome';
 @import 'box-sizing';
 
 @import 'reset';
@@ -35,6 +31,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     margin: $m-gutter;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 
+    &--btns {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-top: 0.1rem solid rgba(146, 207, 198, 1.0);
+    }
+
+    &--input {
+      margin: 1rem;
+    }
 
     &--content {
       display: block;
