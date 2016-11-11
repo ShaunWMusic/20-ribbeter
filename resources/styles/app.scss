@@ -26,10 +26,35 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
   &__item {
-    display: flex;
-    flex-basis: calc(100% / 3 - #{$m-gutter} - #{$m-gutter});
     margin: $m-gutter;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+    &--main {
+      flex-basis: calc(100% / 2 - #{$m-gutter} - #{$m-gutter});
+      margin: $m-gutter;
+      box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+      color: rgba(237, 247, 242, 1.0);
+    }
+
+    &--ribbits {
+    h2 {
+      margin: 0;
+      background: rgba(147, 202, 98, 1.0);
+      padding: 0.5rem;
+    }
+    }
+
+    &--results {
+      padding: 0.5rem;
+      background: rgba(237, 247, 242, 1.0);
+      text-align: center;
+      color: rgba(89, 197, 210, 1.0);
+      margin: 1rem 0.5rem;
+    }
+
+    &--post {
+      border-top: 0.1rem solid rgba(146, 207, 198, 1.0);
+    }
 
     &--btns {
       display: flex;
@@ -40,6 +65,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
     &--input {
       margin: 1rem;
+      border-bottom: 0.3rem solid rgba(149, 202, 78, 1.0);
+
+      textarea {
+        background: rgba(237, 247, 242, 1.0);
+        border: 0;
+        outline: none;
+      }
     }
 
     &--content {
@@ -168,4 +200,11 @@ justify-content: center;
     text-align: center;
     margin: 0.5rem auto;
   }
+}
+
+.card__header {
+  background: rgba(147, 202, 98, 1.0);
+  margin: 0;
+  padding: 0.5rem;
+  color: rgba(237, 247, 242, 1.0);
 }
