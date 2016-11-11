@@ -19,18 +19,19 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .grid {
   display: flex;
   margin: -1rem;
-  flex-wrap: wrap;
+
 
   &--center {
     justify-content: center;
   }
 
   &__item {
+    flex-basis: calc(15% - #{$m-gutter} - #{$m-gutter});
     margin: $m-gutter;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 
     &--main {
-      flex-basis: calc(100% / 2 - #{$m-gutter} - #{$m-gutter});
+      flex-basis: calc(65% - #{$m-gutter} - #{$m-gutter});
       margin: $m-gutter;
       box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
       color: rgba(237, 247, 242, 1.0);

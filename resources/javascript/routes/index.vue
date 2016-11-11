@@ -26,7 +26,7 @@
         <ul class="grid__item--post">
           <li v-for="post in posts">
             {{ post.username }}
-            {{ post.comment }}
+            {{ message.comment }}
           </li>
         </ul>
         </div>
@@ -37,9 +37,11 @@
 
 <script>
 export default {
-  prop: ['posts'],
+  props: ['posts'],
+
   data() {
     return {
+      message: '',
     };
   },
 
