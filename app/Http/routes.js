@@ -17,17 +17,18 @@
 
 const Route = use('Route');
 
-Route.on('/').render('layout');
+Route.on('/').render('welcome');
 
 Route.get('/register', 'UserController.create');
 Route.post('/register', 'UserController.store');
 
-Route.get('/login', 'loginController.create');
+Route.get('/login', 'LoginController.create');
 Route.post('/login', 'LoginController.store');
+
+Route.any('/logout', 'LoginController.destroy');
 
 Route.get('/users', 'UserController.index').middleware('auth');
 
-Route.any('/logout', 'LoginController.destroy');
 Route.resource('/api/ribbits', 'Api/RibbitController').middleware('auth');
 
 Route.any('*').render('vue').middleware('auth');

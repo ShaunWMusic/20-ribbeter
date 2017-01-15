@@ -26,7 +26,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
   &__item {
-    flex-basis: calc(15% - #{$m-gutter} - #{$m-gutter});
+    flex-basis: calc(50%);
     margin: $m-gutter;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 

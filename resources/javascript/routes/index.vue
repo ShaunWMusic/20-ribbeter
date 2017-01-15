@@ -24,8 +24,8 @@
       </div>
         <div class="grid__item--ribbits">
         <ul class="grid__item--post">
-          <li v-for="post in posts">
-            {{ post.username }}
+          <li v-for="message in messages">
+            {{ message.username }}
             {{ message.comment }}
           </li>
         </ul>
@@ -37,7 +37,6 @@
 
 <script>
 export default {
-  props: ['posts'],
 
   data() {
     return {

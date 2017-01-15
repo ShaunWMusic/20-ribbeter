@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="">
     <router-view
-      :posts="posts"
+      :message="messages"
         @findAllPosts="findAllPosts"
         @findPost="findPost"
     ></router-view>
@@ -10,9 +10,10 @@
 
 <script>
 export default {
+  props: ['message'],
   data() {
     return {
-      posts: [],
+      ribbits: [],
     };
   },
 
