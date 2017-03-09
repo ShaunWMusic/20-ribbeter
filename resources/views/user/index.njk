@@ -1,0 +1,19 @@
+{% extends "layout" %}
+
+{% block content %}
+
+  <h3 class="header-users">Users</h2>
+    <div class="grid">
+      {% for user in users %}
+        <div class="grid__item">
+          <img src="http://www.placecera.com/100/100" alt="">
+          <div class="grid__item--content">
+            <p>{{ user.email }}</p>
+            <p>${{ user.username }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+
+{% endblock %}

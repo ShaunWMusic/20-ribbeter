@@ -1,8 +1,211 @@
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
+$c-primary: #96ca2d;
+$c-light: #b5e655;
+$c-secondary: #4bb5c1;
+$c-secondary-light: #7FC6BC;
+$c-white: #edf7f2;
+$c-pure-white: #fff;
+$c-danger: #de6363;
+$m-gutter: 1rem;
+$m-max-width: 60rem;
+
+$font: 'Dosis', sans-serif;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome/scss/font-awesome';
+@import 'scss/font-awesome';
 @import 'box-sizing';
 
-@import 'adonis';
+@import 'reset';
+
+.grid {
+  display: flex;
+  margin: -1rem;
+
+
+  &--center {
+    justify-content: center;
+  }
+
+  &__item {
+    flex-basis: calc(50%);
+    margin: $m-gutter;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+    &--main {
+      flex-basis: calc(65% - #{$m-gutter} - #{$m-gutter});
+      margin: $m-gutter;
+      box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+      color: rgba(237, 247, 242, 1.0);
+    }
+
+    &--ribbits {
+    h2 {
+      margin: 0;
+      background: rgba(147, 202, 98, 1.0);
+      padding: 0.5rem;
+    }
+    }
+
+    &--results {
+      padding: 0.5rem;
+      background: rgba(237, 247, 242, 1.0);
+      text-align: center;
+      color: rgba(89, 197, 210, 1.0);
+      margin: 1rem 0.5rem;
+    }
+
+    &--post {
+      border-top: 0.1rem solid rgba(146, 207, 198, 1.0);
+    }
+
+    &--btns {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-top: 0.1rem solid rgba(146, 207, 198, 1.0);
+    }
+
+    &--input {
+      margin: 1rem;
+      border-bottom: 0.3rem solid rgba(149, 202, 78, 1.0);
+
+      textarea {
+        background: rgba(237, 247, 242, 1.0);
+        border: 0;
+        outline: none;
+      }
+    }
+
+    &--content {
+      display: block;
+      padding-right: 7rem;
+
+    }
+
+
+    img {
+      padding: 0.5rem;
+      height: 6rem;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &--half {
+      max-width: 50%;
+    }
+  }
+}
+
+.logo {
+    color: $c-white;
+  }
+
+
+.section {
+  padding: $m-gutter;
+}
+
+.container {
+  max-width: $m-max-width;
+  margin: 0 auto;
+}
+
+.top-nav {
+  background: rgba(147, 202, 98, 1.0);
+  display: flex;
+  justify-content: space-between;
+  color: $c-pure-white;
+  padding: $m-gutter;
+  font-size: 1.5rem;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+    ul {
+      display: flex;
+      margin: 0 0.5rem;
+
+      li a {
+        padding-left: 0.5rem;
+        margin-top: 1rem;
+        color: $c-white;
+      }
+    }
+
+}
+
+
+
+  .title-account {
+    background: rgba(147, 202, 98, 1.0);
+    color: $c-pure-white;
+    margin-top: 0;
+    padding-left: 0.5rem;
+  }
+
+form {
+  flex-basis: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.btn {
+  display: block;
+  outline: none;
+  background: $c-white;
+  color: rgba(74, 181, 189, 1.0);
+  padding: 0.4rem;
+  border: 0;
+  font: inherit;
+  text-align: center;
+
+  &--primary {
+    background: rgba(147, 202, 98, 1.0);
+    color: $c-white;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-bottom: 0.2rem solid rgba(74, 181, 189, 1.0);
+}
+
+.form-group {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.header-users {
+  border-bottom: 0.1rem solid rgba(146, 207, 198, 1.0);
+}
+
+
+.alert {
+display: flex;
+justify-content: center;
+  &--error {
+    color: $c-danger;
+    width: 29%;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+}
+
+.card__header {
+  background: rgba(147, 202, 98, 1.0);
+  margin: 0;
+  padding: 0.5rem;
+  color: rgba(237, 247, 242, 1.0);
+}
